@@ -6,5 +6,5 @@ module.exports = function (context, input) {
 
     var values = [1,2,3];
     _(values).map(value => context.log(value + 10));
-    
+    context.res = {status: 200, body: {value: "banan"}};
 };
